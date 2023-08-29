@@ -44,7 +44,8 @@ const ManageExam = () => {
         "http://127.0.0.1:8000/api/add_new_exam",
         userField
       );
-      console.log(responce)
+      console.log(responce);
+      console.log(userField);
     } catch (err) {
       console.log("Something Wrong");
     }
@@ -181,21 +182,21 @@ const ManageExam = () => {
                                                 
                              return(
                                 <tr>
-                                    <td>{i}</td>
-                                    <td>{exam.title}</td>
-                                    <td>{exam.cat_name}</td>
-                                    <td>{exam.exam_date}</td>
-                                    <td>status</td>
-                             <td>
-                                <NavLink to="/">Edit</NavLink>-
-                                <NavLink to="/">delete</NavLink>-
-                                <NavLink to={`/admin/add_questions/${exam.id}`}>addQuestion</NavLink>
-                             </td>
-                                </tr>
+                                     <td>{i}</td>
+                                     <td>{exam.title}</td>
+                                     <td>{exam.cat_name}</td>
+                                     <td>{exam.exam_date}</td>
+                                     <td>status</td>
+                              <td>
+                                 <NavLink to="/">Edit</NavLink>-
+                                 <NavLink to="/">delete</NavLink>-
+                                 <NavLink to={`/admin/add_questions/${exam.id}`}>addQuestion</NavLink>
+                              </td>
+                                 </tr>
                              )
 
-                            })}  
- */}
+                            })}   */}
+
 
 
 

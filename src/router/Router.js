@@ -7,6 +7,7 @@ import RegisterAdmin from "../components/Auth/Register/RegiserAdmin";
 import LoginAdmin from "../components/Auth/Login/LoginAdmin";
 import RegisterUser from "../components/Auth/Register/RegisterUser";
 import AdminPage from "../components/AdminPage/Dashboard";
+import UserPage from "../components/UserPage/Dashboard";
 import ExamCategory from "../components/AdminPage/layouts/ExamCategory";
 import ManageExam from "../components/AdminPage/layouts/ManageExam";
 import AddQuestions from "../components/AdminPage/layouts/AddQuestions";
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/register/admin" element={<RegisterAdmin />} />
       <Route path="/login/admin" element={<LoginAdmin />} />
       <Route path="/admin/dashboard" element={<AdminPage />} />
+      <Route path="/user/dashboard" element={<UserPage/>}/>
 
       <Route path="/admin/exam_category" element={<ExamCategory />} />
       <Route path="/admin/manage_exam" element={<ManageExam />} />
